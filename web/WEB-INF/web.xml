@@ -7,4 +7,14 @@
         <servlet-name>servlet_HelloWorld</servlet-name>
         <servlet-class>com.jweb.servlets.servlet_HelloWorld</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet_HelloWorld</servlet-name>
+        <url-pattern>/servlet_HelloWorld</url-pattern>
+    </servlet-mapping>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <trim-directive-whitespaces>true</trim-directive-whitespaces>
+        </jsp-property-group>
+    </jsp-config>
 </web-app>
