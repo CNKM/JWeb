@@ -22,15 +22,15 @@
           <img src="Images/mainbanner.jpg" />
       </div>
       <div id="menu">
-          <a id="btnHome"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black;padding: 0px">首页</a>
-          <a id="btnCReport"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black">服务投诉</a>
-          <a id="btnUserRight"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black;">用户审批</a>
-          <a id="btnCOP"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black;">投诉处理</a>
-          <a id="btnUserLogin"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black">用户登录</a>
-          <a id="btnLoginOff"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black">注销登录</a>
+          <a id="btnHome"  class="easyui-linkbutton menuButtonStyle" data-options="plain:true,iconCls:'icon-add'"   >首页</a>
+          <a id="btnCReport"  class="easyui-linkbutton menuButtonStyle" data-options="plain:true,iconCls:'icon-add'">服务投诉</a>
+          <%--<a id="btnUserRight"  class="easyui-linkbutton menuButtonStyle" data-options="plain:true,iconCls:'icon-add'" >用户审批</a>--%>
+          <%--<a id="btnCOP"  class="easyui-linkbutton menuButtonStyle" data-options="plain:true,iconCls:'icon-add'" >投诉处理</a>--%>
+          <%--<a id="btnUserLogin"  class="easyui-linkbutton menuButtonStyle" data-options="plain:true,iconCls:'icon-add'" >用户登录</a>--%>
+          <%--<a id="btnLoginOff"  class="easyui-linkbutton menuButtonStyle" data-options="plain:true,iconCls:'icon-add'" >注销登录</a>--%>
       </div>
       <div id="mainContent">
-          <iframe id="fcontent" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 603px; border: 0; overflow: hidden;"></iframe>
+          <iframe id="fcontent" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 560px; border: 0; overflow: hidden;" src="Views/View_ComplainList.jsp"></iframe>
       </div>
       <div id="bottom">
           <p>

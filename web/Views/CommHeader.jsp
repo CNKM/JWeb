@@ -9,6 +9,7 @@
       <script  type="text/javascript" src="<%=RootPath%>JavaScripts/Comm/CommCode.js"></script>
       <%--EasyUI--%>
       <script  type="text/javascript" src="<%=RootPath%>JavaScripts/EasyUI/jquery.easyui.min.js"></script>
+      <script  type="text/javascript" src="<%=RootPath%>JavaScripts/EasyUI/locale/easyui-lang-zh_CN.js"></script>
       <%--CSS Lib--%>
       <%--EasyUI Comm Icon Css--%>
       <link rel="stylesheet" type="text/css" href="<%=RootPath%>JavaScripts/EasyUI/themes/icon.css">

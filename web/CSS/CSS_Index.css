@@ -21,16 +21,23 @@ body {
     width: 966px;
     height: 40px;
     background: #95B8E7;
-    line-height: 40px;
     text-align: center;
+    vertical-align: middle;
+    margin-top: 2px;
+}
 
+.menuButtonStyle {
+    color: black !important;
+    font-size: 15px;
+    margin-top: 6px;
 }
 
 #mainContent {
     width: 966px;
-    height: 586px;
     margin-bottom: 5px;
 }
+
+
 
 #bottom {
     width: 966px;
@@ -41,3 +48,5 @@ body {
     background-color: #0a7ac2;
     color: #ffffff;
 }
+
+
