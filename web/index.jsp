@@ -6,7 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
   <head>
     <title></title>
       <jsp:include page="Views/CommHeader.jsp"/>
@@ -21,7 +22,7 @@
           <img src="Images/mainbanner.jpg" />
       </div>
       <div id="menu">
-          <a id="btnHome"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black">首页</a>
+          <a id="btnHome"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black;padding: 0px">首页</a>
           <a id="btnCReport"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black">服务投诉</a>
           <a id="btnUserRight"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black;">用户审批</a>
           <a id="btnCOP"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" style="color: black;">投诉处理</a>

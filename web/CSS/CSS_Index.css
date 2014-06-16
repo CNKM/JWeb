@@ -14,15 +14,16 @@ body {
 }
 
 #header {
-    height: 225px;
-    margin-bottom: 1px;
+    height: 230px;
 }
 
 #menu {
     width: 966px;
     height: 40px;
     background: #95B8E7;
+    line-height: 40px;
     text-align: center;
+
 }
 
 #mainContent {
