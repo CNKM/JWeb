@@ -1,6 +1,9 @@
 package com.jweb.comm.easyui;
 
+import org.codehaus.jackson.type.TypeReference;
+
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.List;
 
 
@@ -10,7 +13,7 @@ import java.util.List;
 public class DataGridPostInfo {
 
 
-    public DataGridPostInfo(HttpServletRequest req) {
+    public DataGridPostInfo(HttpServletRequest req) throws IOException {
         CurrentPage = 0;
         PageSize = 0;
         String Rules="";
@@ -25,12 +28,7 @@ public class DataGridPostInfo {
 
         if (req.getParameter("filterRules") != null) {
             Rules= req.getParameter("filterRules");
-
-
-
-
-            //FilterRules = Newtonsoft.Json.JsonConvert.DeserializeObject < List < EasyUI_DataGridFilter_FilterRule >> (Rules);
-
+            List<DataGridFilterRule> ruleslist=CommHelper.JacksonOM.readValue(Rules,new TypeReference<List<DataGridFilterRule>>(){});
         }
     }
 

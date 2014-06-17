@@ -6,32 +6,32 @@ package com.jweb.comm.easyui;
 public class DataGridFilterRule {
 
     public Object getValue() {
-        return Value;
+        return value;
     }
 
     public void setValue(Object value) {
-        Value = value;
+        this.value = value;
     }
 
-    Object Value;
+    Object value;
 
-    public DataGridFilterOperateType get_OperateType() {
-        return _OperateType;
+    public DataGridFilterOperateType getOp() {
+        return op;
     }
 
-    public void set_OperateType(DataGridFilterOperateType _OperateType) {
-        this._OperateType = _OperateType;
+    public void setOp(DataGridFilterOperateType op) {
+        this.op = op;
     }
 
-    DataGridFilterOperateType _OperateType;
+    DataGridFilterOperateType op;
 
     public String getField() {
-        return Field;
+        return field;
     }
 
     public void setField(String field) {
-        Field = field;
+        this.field = field;
     }
-    String Field;
+    String field;
 
 }

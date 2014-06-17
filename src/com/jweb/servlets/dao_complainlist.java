@@ -12,7 +12,8 @@ import java.io.IOException;
 public class dao_complainlist extends daoServletBase {
     @Override
     public void doAction(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        DataGridPostInfo dataGridPostInfo =new DataGridPostInfo(req);
+        DataGridPostInfo dataGridPostInfo;
+        dataGridPostInfo = new DataGridPostInfo(req);
         //super.doAction(req, res);
     }
 }
