@@ -3,7 +3,7 @@ package com.jweb.comm.easyui;
 /**
  * Created by XDAW on 2014-06-17.
  */
-public enum OperatType {
+public enum DataGridFilterOperateType {
     equal,
     greater,
     less,

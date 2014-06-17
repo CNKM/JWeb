@@ -15,15 +15,15 @@ public class DataGridFilterRule {
 
     Object Value;
 
-    public OperatType get_OperateType() {
+    public DataGridFilterOperateType get_OperateType() {
         return _OperateType;
     }
 
-    public void set_OperateType(OperatType _OperateType) {
+    public void set_OperateType(DataGridFilterOperateType _OperateType) {
         this._OperateType = _OperateType;
     }
 
-    OperatType _OperateType;
+    DataGridFilterOperateType _OperateType;
 
     public String getField() {
         return Field;
