@@ -57,6 +57,55 @@ var showMessage = function (msgdiv, msgfbody, title, contend, msgtype, closedfoc
     msgdiv.window('center');
 }
 
+//功能页面调用警告提示
+//contend 内容
+//closedfocusControl 关闭消息框后聚焦控件 如不需要传入null
+//coloseevent 关闭后的回调
+var subMsgAlert = function (contend, closedfocusControl, coloseevent) {
+    var ss = parent.$("#w");
+    var sc = parent.$("#wcontend");
+    showMessage(ss, sc, "错误", contend, "Error", closedfocusControl, coloseevent)
+}
+
+//一般不用 使用 MsgAlert使用
+var showAlert = function (msgdiv, msgfbody, contend, closedfocusControl, coloseevent) {
+    showMessage(msgdiv, msgfbody, "错误", contend, "Error", closedfocusControl, coloseevent);
+}
+
+//首页页面调用警告提示
+//contend 内容
+//closedfocusControl 关闭消息框后聚焦控件 如不需要传入null
+//coloseevent 关闭后的回调
+var MsgAlert = function (contend, closedfocusControl, coloseevent) {
+    var ss = $("#w");
+    var sc = $("#wcontend");
+    showMessage(ss, sc, "错误", contend, "Error", closedfocusControl, coloseevent)
+}
+
+//功能页面调用消息提示
+//contend 内容
+//closedfocusControl 关闭消息框后聚焦控件 如不需要传入null
+//coloseevent 关闭后的回调
+var subMsgInfo = function (contend, closedfocusControl,coloseevent) {
+    var ss = parent.$("#w");
+    var sc = parent.$("#wcontend");
+    showMessage(ss, sc, "消息", contend, "", closedfocusControl, coloseevent)
+}
+//一般不用 使用 MsgInfo 使用
+var showMsg = function (msgdiv, msgfbody, contend, closedfocusControl, coloseevent) {
+    showMessage(msgdiv, msgfbody, "消息", contend, "", closedfocusControl, coloseevent);
+}
+//首页面调用消息提示
+//contend 内容
+//closedfocusControl 关闭消息框后聚焦控件 如不需要传入null
+//coloseevent 关闭后的回调
+var MsgInfo = function (contend, closedfocusControl, coloseevent) {
+    var ss = $("#w");
+    var sc = $("#wcontend");
+    showMessage(ss, sc, "消息", contend, "", closedfocusControl, coloseevent)
+}
+
+
 
 //首页页面调用警告提示
 //contend 内容

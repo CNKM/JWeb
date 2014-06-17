@@ -3,14 +3,37 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <!--servlets 定义-->
+    <!--*****************************************************************************************************************-->
+    <!--投诉列表-->
     <servlet>
-        <servlet-name>servlet_dao_complainlist</servlet-name>
-        <servlet-class>com.jweb.servlets.servlet_dao_complainlist</servlet-class>
+        <servlet-name>dao_complainlist</servlet-name>
+        <servlet-class>com.jweb.servlets.dao_complainlist</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>servlet_dao_complainlist</servlet-name>
-        <url-pattern>/servlet_dao_complainlist</url-pattern>
+        <servlet-name>dao_complainlist</servlet-name>
+        <url-pattern>/dao_complainlist</url-pattern>
     </servlet-mapping>
+
+    <!--用户登录-->
+    <servlet>
+        <servlet-name>dao_userlogin</servlet-name>
+        <servlet-class>com.jweb.servlets.dao_userlogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dao_userlogin</servlet-name>
+        <url-pattern>/dao_userlogin</url-pattern>
+    </servlet-mapping>
+    <!--提交投诉-->
+    <servlet>
+        <servlet-name>dao_handupcomplain</servlet-name>
+        <servlet-class>com.jweb.servlets.dao_handupcomplain</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dao_handupcomplain</servlet-name>
+        <url-pattern>/dao_handupcomplain</url-pattern>
+    </servlet-mapping>
+    <!--*****************************************************************************************************************-->
     <jsp-config>
         <jsp-property-group>
             <url-pattern>*.jsp</url-pattern>

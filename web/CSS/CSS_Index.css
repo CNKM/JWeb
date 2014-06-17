@@ -19,7 +19,7 @@ body {
 
 #menu {
     width: 966px;
-    height: 40px;
+    height: 30px;
     background: #95B8E7;
     text-align: center;
     vertical-align: middle;
@@ -29,7 +29,7 @@ body {
 .menuButtonStyle {
     color: black !important;
     font-size: 15px;
-    margin-top: 6px;
+    margin-top: 3px;
 }
 
 #mainContent {

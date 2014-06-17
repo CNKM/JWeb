@@ -7,12 +7,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by XDAW on 2014-06-16.
+ * Created by XDAW on 2014-06-17.
  */
-public class servlet_dao_complainlist extends HttpServlet {
+public class daoServletBase extends HttpServlet {
 
-    private void doAction(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        String T =new String("123");
+    public void doAction(HttpServletRequest req, HttpServletResponse res) throws IOException {
 
     }
 
