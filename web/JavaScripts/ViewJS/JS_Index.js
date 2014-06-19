@@ -17,7 +17,7 @@ $(function() {
                 TValues: ""
             };
             regObject.TValues = FormValueToJsonString($("#fmComplain"));
-            CallFunction("/dao_handupcomplain", JSON.stringify(regObject),
+            CallFunction("/Dao_HandupComplain", JSON.stringify(regObject),
                 function (data) {
                     var returnReuslt = JSON.parse(data.d);
                     if (returnReuslt.ActionReuslt == 1) {

@@ -7,33 +7,52 @@
     <!--*****************************************************************************************************************-->
     <!--投诉列表-->
     <servlet>
-        <servlet-name>dao_complainlist</servlet-name>
-        <servlet-class>com.jweb.servlets.dao_complainlist</servlet-class>
+        <servlet-name>Dao_ComplainList</servlet-name>
+        <servlet-class>com.jweb.servlets.Dao_ComplainList</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>dao_complainlist</servlet-name>
-        <url-pattern>/dao_complainlist</url-pattern>
+        <servlet-name>Dao_ComplainList</servlet-name>
+        <url-pattern>/Dao_ComplainList</url-pattern>
     </servlet-mapping>
 
     <!--用户登录-->
     <servlet>
-        <servlet-name>dao_userlogin</servlet-name>
-        <servlet-class>com.jweb.servlets.dao_userlogin</servlet-class>
+        <servlet-name>Dao_UserLogin</servlet-name>
+        <servlet-class>com.jweb.servlets.Dao_UserLogin</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>dao_userlogin</servlet-name>
-        <url-pattern>/dao_userlogin</url-pattern>
+        <servlet-name>Dao_UserLogin</servlet-name>
+        <url-pattern>/Dao_UserLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Dao_UserCheck</servlet-name>
+        <servlet-class>com.jweb.servlets.Dao_UserCheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Dao_UserCheck</servlet-name>
+        <url-pattern>/Dao_UserCheck</url-pattern>
     </servlet-mapping>
     <!--提交投诉-->
     <servlet>
-        <servlet-name>dao_handupcomplain</servlet-name>
-        <servlet-class>com.jweb.servlets.dao_handupcomplain</servlet-class>
+        <servlet-name>Dao_HandupComplain</servlet-name>
+        <servlet-class>com.jweb.servlets.Dao_HandupComplain</servlet-class>
     </servlet>
-   
     <servlet-mapping>
-        <servlet-name>dao_handupcomplain</servlet-name>
-        <url-pattern>/dao_handupcomplain</url-pattern>
+        <servlet-name>Dao_HandupComplain</servlet-name>
+        <url-pattern>/Dao_HandupComplain</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Dao_ToLogin</servlet-name>
+        <servlet-class>com.jweb.servlets.Dao_ToLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Dao_ToLogin</servlet-name>
+        <url-pattern>/Dao_ToLogin</url-pattern>
+    </servlet-mapping>
+
+
     <!--*****************************************************************************************************************-->
     <jsp-config>
         <jsp-property-group>
@@ -41,4 +60,7 @@
             <trim-directive-whitespaces>true</trim-directive-whitespaces>
         </jsp-property-group>
     </jsp-config>
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
 </web-app>

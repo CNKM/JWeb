@@ -18,7 +18,7 @@
 </head>
 <body>
 <table class="easyui-datagrid" title="投诉列表" style="width: 966px; height: 500px" id="udl"
-       data-options="rownumbers:true,singleSelect:false,collapsible:false,pagination:true,idField:'F_SN',pageSize:20,pageList:[10,20,50,100,200],url:'/dao_complainlist',remoteFilter:true">
+       data-options="rownumbers:true,singleSelect:false,collapsible:false,pagination:true,idField:'F_SN',pageSize:20,pageList:[10,20,50,100,200],url:'/Dao_ComplainList',remoteFilter:true">
     <thead>
     <tr>
         <th data-options="field:'ck',checkbox:true"></th>
