@@ -38,19 +38,20 @@
         <servlet-name>Dao_HandupComplain</servlet-name>
         <servlet-class>com.jweb.servlets.Dao_HandupComplain</servlet-class>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>Dao_HandupComplain</servlet-name>
         <url-pattern>/Dao_HandupComplain</url-pattern>
     </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>Dao_ToLogin</servlet-name>
-        <servlet-class>com.jweb.servlets.Dao_ToLogin</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Dao_ToLogin</servlet-name>
-        <url-pattern>/Dao_ToLogin</url-pattern>
-    </servlet-mapping>
+
+    <!--<servlet>-->
+    <!--<servlet-name>Dao_ToLogin</servlet-name>-->
+    <!--<servlet-class>com.jweb.servlets.Dao_ToLogin</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>Dao_ToLogin</servlet-name>-->
+    <!--<url-pattern>/Dao_ToLogin</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 
     <!--*****************************************************************************************************************-->

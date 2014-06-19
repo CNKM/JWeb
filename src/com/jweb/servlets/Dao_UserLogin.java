@@ -12,10 +12,10 @@ import java.io.IOException;
  */
 public class Dao_UserLogin extends Dao_ServletBase {
 
-    private void ToFail(){
+    private void ToFail(HttpServletResponse res) throws IOException {
         CommHelper.ToResponseStr(res,new ActionReturn(0,"登录失败").toString());
     }
-    private void ToSuccess() {
+    private void ToSuccess(HttpServletResponse res) throws IOException {
         CommHelper.ToResponseStr(res,new ActionReturn(0,"登陆成功").toString());
     }
     @Override
@@ -24,20 +24,21 @@ public class Dao_UserLogin extends Dao_ServletBase {
         String Uname = CommHelper.GetRequestParmeValue(req,"UName");
         String Upwd =CommHelper.GetRequestParmeValue(req,"UPwd");
         if(CommHelper.IsNullorEmpty(Uname)) {
-          ToFail();
-          return;;
+          ToFail(res);
+          return;
         }
         if(CommHelper.IsNullorEmpty(Upwd)) {
-            ToFail();
-            return;;
+            ToFail(res);
+            return;
         }
 
         if(Uname.equals("admin")&&(Upwd.equals("admin")))
         {
-            ToSuccess();
+            CommHelper.SetSessionValue(req,"IsLogined",true);
+            ToSuccess(res);
         }else
         {
-            ToFail();
+            ToFail(res);
         }
 
 
