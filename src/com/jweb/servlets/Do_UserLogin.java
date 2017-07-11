@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by XDAW on 2014-06-17.
  */
-public class Dao_UserLogin extends Dao_ServletBase {
+public class Do_UserLogin extends Do_ServletBase {
 
     private void ToFail(HttpServletResponse res) throws IOException {
         CommHelper.ToResponseStr(res,new ActionReturn(0,"登录失败").toString());
@@ -21,8 +21,8 @@ public class Dao_UserLogin extends Dao_ServletBase {
     @Override
     public void doAction(HttpServletRequest req, HttpServletResponse res) throws IOException {
         //super.doAction(req, res);
-        String Uname = CommHelper.GetRequestParmeValue(req,"UName");
-        String Upwd =CommHelper.GetRequestParmeValue(req,"UPwd");
+        String Uname = CommHelper.GetRequestParmeValue(req,"u");
+        String Upwd =CommHelper.GetRequestParmeValue(req,"p");
         if(CommHelper.IsNullorEmpty(Uname)) {
           ToFail(res);
           return;

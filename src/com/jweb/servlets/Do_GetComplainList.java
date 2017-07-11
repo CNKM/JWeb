@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * Created by XDAW on 2014-06-16.
  */
-public class Dao_ComplainList extends Dao_ServletBase {
+public class Do_GetComplainList extends Do_ServletBase {
     @Override
     public void doAction(HttpServletRequest req, HttpServletResponse res) throws IOException {
         DataGridPostInfo dataGridPostInfo;

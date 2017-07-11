@@ -4,7 +4,7 @@
 %>
         <%--javaScripts Lib--%>
         <%--Base Jquery--%>
-        <script  type="text/javascript" src="<%=RootPath%>JavaScripts/EasyUI/jquery.min.js"></script>
+      <script  type="text/javascript" src="<%=RootPath%>JavaScripts/EasyUI/jquery.min.js"></script>
       <script  type="text/javascript" src="<%=RootPath%>JavaScripts/Comm/JqueryExt.js"></script>
       <script  type="text/javascript" src="<%=RootPath%>JavaScripts/Comm/CommCode.js"></script>
       <%--EasyUI--%>

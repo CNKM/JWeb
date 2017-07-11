@@ -7,41 +7,41 @@
     <!--*****************************************************************************************************************-->
     <!--投诉列表-->
     <servlet>
-        <servlet-name>Dao_ComplainList</servlet-name>
-        <servlet-class>com.jweb.servlets.Dao_ComplainList</servlet-class>
+        <servlet-name>Do_ComplainList</servlet-name>
+        <servlet-class>com.jweb.servlets.Do_GetComplainList</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Dao_ComplainList</servlet-name>
-        <url-pattern>/Dao_ComplainList</url-pattern>
+        <servlet-name>Do_ComplainList</servlet-name>
+        <url-pattern>/Do_ComplainList</url-pattern>
     </servlet-mapping>
 
     <!--用户登录-->
     <servlet>
-        <servlet-name>Dao_UserLogin</servlet-name>
-        <servlet-class>com.jweb.servlets.Dao_UserLogin</servlet-class>
+        <servlet-name>Do_UserLogin</servlet-name>
+        <servlet-class>com.jweb.servlets.Do_UserLogin</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Dao_UserLogin</servlet-name>
-        <url-pattern>/Dao_UserLogin</url-pattern>
+        <servlet-name>Do_UserLogin</servlet-name>
+        <url-pattern>/Do_UserLogin</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Dao_UserCheck</servlet-name>
-        <servlet-class>com.jweb.servlets.Dao_UserCheck</servlet-class>
+        <servlet-name>Do_UserCheck</servlet-name>
+        <servlet-class>com.jweb.servlets.Do_UserCheck</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Dao_UserCheck</servlet-name>
-        <url-pattern>/Dao_UserCheck</url-pattern>
+        <servlet-name>Do_UserCheck</servlet-name>
+        <url-pattern>/Do_UserCheck</url-pattern>
     </servlet-mapping>
     <!--提交投诉-->
     <servlet>
-        <servlet-name>Dao_HandupComplain</servlet-name>
-        <servlet-class>com.jweb.servlets.Dao_HandupComplain</servlet-class>
+        <servlet-name>Do_HandupComplain</servlet-name>
+        <servlet-class>com.jweb.servlets.Do_HandupComplain</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Dao_HandupComplain</servlet-name>
-        <url-pattern>/Dao_HandupComplain</url-pattern>
+        <servlet-name>Do_HandupComplain</servlet-name>
+        <url-pattern>/Do_HandupComplain</url-pattern>
     </servlet-mapping>
 
     <!--<servlet>-->

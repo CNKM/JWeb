@@ -1,18 +1,15 @@
 package com.jweb.servlets;
 
-import com.jweb.comm.CommHelper;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by XDAW on 2014-06-19.
+ * Created by XDAW on 2014-06-17.
  */
-public class Dao_UserCheck extends Dao_ServletBase {
+public class Do_HandupComplain extends Do_ServletBase {
     @Override
     public void doAction(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        Object Value= CommHelper.GetSessionValue(req,"IsLogined");
-
+        super.doAction(req, res);
     }
 }
